@@ -53,6 +53,14 @@ header img {
   align-self: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .header__title-container {
   width: 90%;
   min-width: 288px;
@@ -366,12 +374,15 @@ td {
 }
 
 .main-plans .main-exchange-container__title {
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 }
 
 .main-carousel {
-  width: 100%;
-  height: auto;
+  display: flex;
+  justify-content: center;
+	overflow-x: scroll;
+	overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 
 .main-carousel-recommended {
@@ -391,10 +402,13 @@ td {
   border-radius: 5px;
   position: relative;
   width: 70%;
-  min-width: 230px;
+  min-width: 200px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 5px 0;
+  margin-right: 15px;
+  margin-left: 10px;
+  scroll-snap-align: center;
 }
 
 .main-carousel-plan__title {
@@ -454,4 +468,37 @@ td {
   height: 24px;
   vertical-align: middle;
   margin-left: 5px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer .info {
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li{
+  margin: 15px 0px;
+}
+
+footer .logo {
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--just-white);
 }
