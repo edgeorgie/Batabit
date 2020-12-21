@@ -1,0 +1,12 @@
+.main-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 930px;
+}
+
+.main-cards-container .card {
+  width: 320px;
+  height: auto;
+  margin: 14px 15px;
+}
